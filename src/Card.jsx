@@ -1,10 +1,10 @@
 function Card() {
     return (
         <>
-            <div class="flex justify-center items-center h-screen w-full bg-gradient-to-r from-green-500 to-green-600">
+            <div class="flex justify-center items-center h-screen w-full bg-gradient-to-r from-blue-500 to-purpel-600">
                 <div class="w-1/2 bg-white rounded-lg shadow-2xl p-8 m-4">
                     <h1 class="block w-full tect-center tect-gray-800 text-2xl font-bold mb-6">
-                        KTP
+                        Registrasi
                         <img src={process.env.PUBLIC_URL + '/fira.jpg'} class="flex-=col mb-1 w-40 h-60"/>
                     </h1>
                     <form action="/" method="post">
@@ -13,119 +13,70 @@ function Card() {
                                 class="mb-2 font-bold text-lg text-gray-900"
                                 for="nama"
                             >
-                              Nama:
+                              Nama
                             </label>
                             <input
-                                class="broder py-1 px-2 text-grey-600"
+                                class="broder py-2 px-3 text-grey-800"
                                 type="text"
                                 name="nama"
-                                id="naam"
+                                id="nama"
                             />
                         </div>
 
                         <div class="flex flex-col mb-4">
                             <label
-                                class="mb-2 font-bold text-Ig text-gray-600"
-                                for="nama"
+                                class="mb-2 font-bold text-Ig text-gray-900"
+                                for="gender"
                             >
-                                Tempat/Tanggal lahir:
+                                Gender
                             </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
+                            <div>
+                                <input
+                                  class="border py-2 text-grey-800"
+                                  type="radio"
+                                  name="gender"
+                                  id="pria"
+                               />
+                               <label
+                               class="mb-2 text-gray-900"
+                               for="pria"
+                               > pria</label>
+                            </div>
+                            <div>
+                                <input
+                                class="border py-2 text-grey-800"
+                                type="radio"
+                                name="gender"
+                                id="wanita"
                             />
-                        </div>
-
-                        <div class="flex flex-col mb-4">
                             <label
-                                class="mb-2 font-bold text-Ig text-gray-600"
-                                for="nama"
-                            >
-                                Jenis Kelamin:
-                            </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
-                            />
-                        </div>
-
-                        <div class="flex flex-col mb-4">
-                            <label
-                                class="mb-2 font-bold text-Ig text-gray-600"
-                                for="nama"
-                            >
-                                Alamat:
-                            </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
-                            />
-                        </div>
-
-                        <div class="flex flex-col mb-4">
-                            <label
-                                class="mb-2 font-bold text-Ig text-gray-600"
-                                for="nama"
-                            >
-                                Agama:
-                            </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
-                            />
-                        </div>
-                        <div class="flex flex-col mb-4">
-                             <label
-                                class="mb-2 font-bold text-Ig text-gray-600"
-                                for="nama"
-                            >
-                                Status Perkawinan:
-                            </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
-                            />
+                            class="mb-2 text-gray-900"
+                            for="wanita"
+                            > wanita</label>
+                         </div>
                         </div>
                         <div class="flex flex-col mb-4">
                             <label
-                                class="mb-2 font-bold text-Ig text-gray-600"
-                                for="nama"
+                                class="mb-2 font-bold text-Ig text-gray-900"
+                                for="agama"
                             >
-                                Pekerjaan:
+                                Agama
                             </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
-                            />
-                        </div>
-                        <div class="flex flex-col mb-4">
-                            <label
-                                class="mb-4 font-bold text-Ig text-gray-600"
-                                for="nama"
+                            <select
+                                class="border py-2 px-3 text-grey-800"
+                                name="agama"
+                                id="agama"
                             >
-                                Kewarganegaraan:
-                            </label>
-                            <input
-                                class="border py-1 px-2 text-grey-600"
-                                type="text"
-                                name="nama"
-                                id="naam"
-                            />
+                                <option value="Protestan">Kristen Protestan</option>
+                                <option value="Katholik">Katholik</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Kepercayaan">Aliran Kepercayaan</option>
+                            </select>
                         </div>
                         <button
-                         class="block bg-orange-400 hover:bg-orange-600 text-white uppercase text-lg mx-auto p-4 rounded"
+                         class="block bg-blue-600 hover:bg-blue-00 text-purpel uppercase text-lg mx-auto p-4 rounded"
                         type="submit"
                         >
                             Buat Akun
