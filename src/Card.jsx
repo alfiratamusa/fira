@@ -5,6 +5,7 @@ function Card() {
                 <div class="w-1/2 bg-white rounded-lg shadow-2xl p-8 m-4">
                     <h1 class="block w-full tect-center tect-gray-800 text-2xl font-bold mb-6">
                         KTP
+                        <img src={process.env.PUBLIC_URL + '/fira.jpg'} class="flex-=col mb-1 w-40 h-60"/>
                     </h1>
                     <form action="/" method="post">
                         <div class="flex flex-col mb-4">
